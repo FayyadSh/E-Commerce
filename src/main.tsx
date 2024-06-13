@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client'
-import MainLayout from './layouts/MainLayout/MainLayout'
+import Main from '@layouts/Main/Main'
 import 'bootstrap/dist/css/bootstrap.min.css'
 const root = document.getElementById('root')!
 ReactDOM.createRoot(root).render(
-  <MainLayout></MainLayout>
+  <Main></Main>
 )
