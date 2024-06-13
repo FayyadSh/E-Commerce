@@ -2,6 +2,7 @@ import { Badge,Nav,Navbar} from "react-bootstrap";
 import styles from "./styles.module.css";
 import Container from "react-bootstrap/Container";
 import HeaderBasket from "../../e-commerce/HeaderBasket/HeaderBasket";
+import { NavLink } from "react-router-dom";
 const { headerContainer, headerLogo } = styles
 
 
@@ -21,13 +22,13 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Categries</Nav.Link>
-              <Nav.Link href="#link">About</Nav.Link>
+              <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+              <Nav.Link as={NavLink} to="/categories">Categries</Nav.Link>
+              <Nav.Link as={NavLink} to="/aboutus">About</Nav.Link>
             </Nav>
             <Nav >
-              <Nav.Link href="#home">Login</Nav.Link>
-              <Nav.Link href="#link">Regiester</Nav.Link>
+              <Nav.Link as={NavLink} to="/login">Login</Nav.Link>
+              <Nav.Link as={NavLink} to="/register">Register</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
