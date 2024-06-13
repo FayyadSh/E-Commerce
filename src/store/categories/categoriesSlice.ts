@@ -5,7 +5,7 @@ interface categories {
         id:number,
         title:string,
         prefix:string,
-        image:string
+        img:string
     }[] 
     loading: "idle" | "pending" | "succeeded" | "failed"
     error:string | null
