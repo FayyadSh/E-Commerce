@@ -18,7 +18,7 @@ const Categories = () => {
           <Category {...record} />
       </Col>
     }) :
-    ''
+    'there is no categories'
   return (
     <Container>
       <Row>
