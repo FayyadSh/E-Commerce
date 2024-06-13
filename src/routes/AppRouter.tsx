@@ -10,11 +10,13 @@ import AboutUs from '@pages/AboutUs'
 import Products from '@pages/Products'
 import Login from '@pages/Login'
 import Register from '@pages/Register'
+import Error from '@pages/Error'
 
  const router = createBrowserRouter([
   {
     path:'/',
     element:<Main/>,
+    errorElement:<Error />,
     children:[
     {
       index:true,
@@ -39,7 +41,7 @@ import Register from '@pages/Register'
     {
         path:"register",
         element:<Register />
-    }
+    },
   ]
   }
 ])
