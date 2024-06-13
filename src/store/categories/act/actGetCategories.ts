@@ -10,10 +10,10 @@ type resopnse = {
 }[]
 const actGetCategories = createAsyncThunk(
   "categories/actGetCategories",
-  async (_, thunkAPI) => {
+  async (_,thunkAPI) => {
     const { rejectWithValue } = thunkAPI;
     try {
-        const response = await axios.get<resopnse>('http://localhost:5005/category')
+        const response = await axios.get<resopnse>('http://localhost:5005/categories')
         return response.data
     } catch (err) {
         if(axios.isAxiosError(err)){
