@@ -1,6 +1,7 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <div>hello</div>
+import MainLayout from './layouts/MainLayout/MainLayout'
+import 'bootstrap/dist/css/bootstrap.min.css'
+const root = document.getElementById('root')!
+ReactDOM.createRoot(root).render(
+  <MainLayout></MainLayout>
 )
