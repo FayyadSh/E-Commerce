@@ -12,9 +12,9 @@ const Categories = () => {
   const {loading,error,records} = useAppSelector(state => state.categoriesSlice)
 
   useEffect(() => {
-    if(!records){
+    // if(!records){
       dispatch(actGetCategories())
-    }
+    // }
   },[dispatch])
 
   return (

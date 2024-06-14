@@ -19,6 +19,7 @@ const actGetCategories = createAsyncThunk(
            return rejectWithValue("Un expected error")
         }
     }
+    ;
   }
 );
 

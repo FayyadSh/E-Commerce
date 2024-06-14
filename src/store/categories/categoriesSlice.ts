@@ -18,7 +18,7 @@ const categorySlice = createSlice({
     name:"categories",
     initialState,
     reducers:{},
-    extraReducers(builder) {
+    extraReducers:(builder) => {
         builder.addCase(actGetCategories.pending ,(state) => {
             state.loading = 'pending'
             state.error = null
