@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import Category from "@components/e-commerce/Category/Category";
 import { useAppDispatch,useAppSelector } from "@store/hooks";
 import { actGetCategories } from "@store/categories/categoriesSlice";

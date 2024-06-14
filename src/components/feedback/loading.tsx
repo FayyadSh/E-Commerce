@@ -1,4 +1,5 @@
 import { loading } from "@customTypes/shared"
+
 type loadingProps = { 
     loading : loading
     error : string | null
